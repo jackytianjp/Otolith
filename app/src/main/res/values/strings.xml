@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Rcues</string>
+    <string name="app_name">Otolith</string>
+
+    <!-- Safety notice shown for a few seconds at startup -->
+    <string name="safety_notice">PASSENGERS ONLY\nDO NOT USE WHILE DRIVING</string>
 
     <!-- Severity levels -->
     <string name="level_light">MILD</string>

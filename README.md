@@ -1,12 +1,16 @@
-# Rcues
+# Otolith
 
 **English** | [中文](README.zh-CN.md)
+
+> ⚠️ **Passengers only.** This app paints an animated light band across the whole display.
+> It is **not for drivers** — do not use it while driving, riding, or operating machinery.
+> Its whole purpose is to give a *passenger* a motion reference.
 
 Motion-sickness relief for **Rokid Glasses**: a visual reference that moves the way your body
 actually feels. Inspired by iPhone's *Vehicle Motion Cues*.
 
 When you ride in a car your inner ear feels the acceleration but your eyes see a static world —
-that conflict is what makes you sick. Rcues draws a **flowing band of light** along the edge of
+that conflict is what makes you sick. Otolith draws a **flowing band of light** along the edge of
 the display that drifts **opposite to the measured acceleration**, so the eyes and the inner ear
 agree again.
 

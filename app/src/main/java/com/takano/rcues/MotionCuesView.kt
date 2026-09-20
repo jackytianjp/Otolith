@@ -126,6 +126,17 @@ class MotionCuesView @JvmOverloads constructor(
     @Volatile var toast: String? = null
     private var toastUntil = 0L
 
+    /** 启动安全提示：只给乘客用，驾驶时禁用。 */
+    @Volatile var safetyNotice: String? = null
+    private var noticeUntil = 0L
+
+    /** 显示启动安全提示 [ms] 毫秒。 */
+    fun showSafetyNotice(text: String, ms: Long = 6000L) {
+        safetyNotice = text
+        noticeUntil = android.os.SystemClock.elapsedRealtime() + ms
+        invalidate()
+    }
+
     private fun dp(v: Float): Float = v * resources.displayMetrics.density
 
     /** 档位名字（跟着系统语言走）。 */
@@ -237,8 +248,19 @@ class MotionCuesView @JvmOverloads constructor(
             canvas.drawText(it, width / 2f, height / 2f, uiText)
         }
 
-        // 换档提示
+        // 启动安全提示（只给乘员用；驾驶时禁用）
         val now = android.os.SystemClock.elapsedRealtime()
+        if (safetyNotice != null && now < noticeUntil) {
+            uiText.textSize = dp(20f)
+            uiText.color = Color.parseColor("#FFC8FFE0")
+            safetyNotice!!.split("\n").forEachIndexed { i, line ->
+                canvas.drawText(line, width / 2f, height / 2f - dp(14f) + i * dp(28f), uiText)
+            }
+        } else if (safetyNotice != null) {
+            safetyNotice = null
+        }
+
+        // 换档提示
         if (toast != null && now < toastUntil) {
             uiText.textSize = dp(18f)
             uiText.color = Color.parseColor("#FFC8FFE0")

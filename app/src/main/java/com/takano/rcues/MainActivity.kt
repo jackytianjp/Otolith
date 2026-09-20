@@ -114,6 +114,12 @@ class MainActivity : Activity(), SensorEventListener {
             RcuesApp.setSeverity(this, idx, toast = false)
         } }
         if (demo) Log.i(TAG, "演示模式：用合成加速度驱动（不用真传感器）")
+
+        // 启动安全提示：本 App 只给乘员用。驾驶时使用流动光带会分散注意力。
+        if (!widthDemo) {
+            view.showSafetyNotice(getString(R.string.safety_notice))
+            Log.i(TAG, "安全提示：仅限乘客使用，驾驶时请勿使用")
+        }
         linear = sensors.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION)
         if (linear == null) {
             Log.w(TAG, "没有线性加速度传感器，退回加速度计 + 重力滤波")

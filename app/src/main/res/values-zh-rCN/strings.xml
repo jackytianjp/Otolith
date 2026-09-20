@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Rcues</string>
+    <string name="app_name">防晕车APP-耳石</string>
+
+    <!-- 启动时显示几秒的安全提示 -->
+    <string name="safety_notice">仅限乘客使用\n驾驶时请勿使用</string>
 
     <!-- 症状档位 -->
     <string name="level_light">轻</string>
