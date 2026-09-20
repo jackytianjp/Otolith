@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rcues</string>
+
+    <!-- Severity levels -->
+    <string name="level_light">MILD</string>
+    <string name="level_medium">MODERATE</string>
+    <string name="level_heavy">SEVERE</string>
+
+    <!-- Toast: level changed. %1$s = level name -->
+    <string name="toast_level">%1$s  (brightness 35\u2192100%%)</string>
+    <string name="toast_level_plain">%1$s</string>
+    <string name="toast_paused">PAUSED</string>
+    <string name="toast_resumed">RUNNING</string>
+    <string name="toast_exit_hint">PRESS AGAIN TO EXIT</string>
+
+    <!-- Demo mode labels (debug only) -->
+    <string name="demo_accel">ACCELERATING</string>
+    <string name="demo_cruise">CRUISING (no acceleration)</string>
+    <string name="demo_brake">BRAKING</string>
+    <string name="demo_stopped">STOPPED</string>
+    <string name="demo_left">TURNING LEFT</string>
+    <string name="demo_right">TURNING RIGHT</string>
+    <string name="demo_straight">STRAIGHT</string>
+</resources>

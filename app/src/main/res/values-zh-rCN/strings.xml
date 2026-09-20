@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rcues</string>
+
+    <!-- 症状档位 -->
+    <string name="level_light">轻</string>
+    <string name="level_medium">中</string>
+    <string name="level_heavy">重</string>
+
+    <!-- 换档提示。%1$s = 档位名 -->
+    <string name="toast_level">%1$s（亮度 35\u2192100%%）</string>
+    <string name="toast_level_plain">%1$s</string>
+    <string name="toast_paused">已暂停</string>
+    <string name="toast_resumed">已继续</string>
+    <string name="toast_exit_hint">再按一次退出</string>
+
+    <!-- 演示模式文字（仅调试用） -->
+    <string name="demo_accel">加速前进</string>
+    <string name="demo_cruise">匀速（无加速度）</string>
+    <string name="demo_brake">刹车减速</string>
+    <string name="demo_stopped">停车</string>
+    <string name="demo_left">左转（向心向左）</string>
+    <string name="demo_right">右转（向心向右）</string>
+    <string name="demo_straight">直行</string>
+</resources>
