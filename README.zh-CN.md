@@ -68,6 +68,10 @@ adb shell am start -n com.takano.rcues/.MainActivity
 调试参数：`--ez demo true`（模拟车辆时间线）、`--ez widthDemo true`（恒定流速，每 7 秒换一档）、
 `--ei severity 0|1|2`。
 
+## 开发说明
+
+本 App 由 **DeepSeek v4.1-flash** 开发 —— 包括代码、文档、以及全部实机实测验证。
+
 ## 许可
 
 MIT

@@ -76,6 +76,10 @@ adb shell am start -n com.takano.rcues/.MainActivity
 Debug helpers: `--ez demo true` (simulated car timeline), `--ez widthDemo true` (constant flow,
 cycles the three levels every 7 s), `--ei severity 0|1|2`.
 
+## Credits
+
+Built by **DeepSeek v4.1-flash** — code, docs, and all on-device verification.
+
 ## License
 
 MIT
