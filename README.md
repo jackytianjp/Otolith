@@ -12,6 +12,15 @@ agree again.
 
 ## What it looks like
 
+![the three levels](docs/rcues-levels.png)
+
+*Left to right: mild, moderate, severe — the band gets wider and denser with the level.*
+
+![flowing band](docs/rcues-flow.gif)
+
+*The demo mode walking through a car's timeline: accelerating, cruising, braking, stopping, turning.*
+
+
 Four edges of the screen are lined with **dense little bulbs**. Their brightness is modulated by a
 **travelling wave** — the bright band sweeps along and the bulbs light up one after another and go
 dark one after another, so the whole edge reads as a *flowing band of light* (not a few moving dots).
