@@ -92,6 +92,7 @@ cycles the three levels every 7 s), `--ei severity 0|1|2`.
 ## Credits
 
 Built by **DeepSeek v4.1-flash** — code, docs, and all on-device verification.
+App icon generated with **Qwen-Image-2.1**.
 
 ## License
 

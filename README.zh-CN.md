@@ -83,6 +83,7 @@ adb shell am start -n com.takano.rcues/.MainActivity
 ## 开发说明
 
 本 App 由 **DeepSeek v4.1-flash** 开发 —— 包括代码、文档、以及全部实机实测验证。
+应用图标由 **Qwen-Image-2.1** 生成。
 
 ## 许可
 
