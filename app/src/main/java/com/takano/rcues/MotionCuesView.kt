@@ -45,15 +45,15 @@ class MotionCuesView @JvmOverloads constructor(
         /** 加速度拉满时的窗口亮度；和 min 相同 = 恒定亮度。 */
         val maxBrightness: Float,
     ) {
-        LIGHT(R.string.level_light, 300f, 6.0f, 0.85f, 0.35f, 0.35f),
-        MEDIUM(R.string.level_medium, 170f, 3.5f, 1.0f, 0.35f, 1.00f),
-        HEAVY(R.string.level_heavy, 130f, 1.5f, 1.15f, 0.35f, 1.00f),
+        LIGHT(R.string.level_light, 300f, 6.0f, 1.275f, 0.35f, 0.35f),
+        MEDIUM(R.string.level_medium, 170f, 3.5f, 2.0f, 0.35f, 1.00f),
+        HEAVY(R.string.level_heavy, 130f, 1.5f, 3.45f, 0.35f, 1.00f),
     }
 
     companion object {
         private const val LP = 0.14f
         private const val GAIN = 55f
-        private const val MAXV = 340f
+        private const val MAXV = 1100f
         private const val RESPONSE = 0.30f
 
         private const val SPACING_DP = 3.2f
